@@ -33,6 +33,7 @@ class RetrofitInstance(
     }
 
     companion object {
-        private const val BASE_URL = "http://10.0.2.2:4000"
+        private const val BROADCAST_ADDRESS = "10.0.2.2"
+        private const val BASE_URL = "http://$BROADCAST_ADDRESS:4000"
     }
 }
