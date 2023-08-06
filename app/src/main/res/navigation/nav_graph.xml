@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_splash">
+
+    <fragment
+        android:id="@+id/fragment_splash"
+        android:name="com.example.rentez.presentation.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/to_login_fragment"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/to_user_profile"
+            app:destination="@id/fragment_user_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.rentez.presentation.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/to_user_profile"
+            app:destination="@id/fragment_user_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_user_profile"
+        android:name="com.example.rentez.presentation.userprofile.UserProfileFragment"
+        android:label="UserFragment"
+        tools:layout="@layout/fragment_user_profile" />
+
+    <fragment
+        android:id="@+id/fragment_sportgrounds"
+        android:name="com.example.rentez.presentation.sportgrounds.SportgroundsFragment"
+        android:label="SportgroundsFragment"
+        tools:layout="@layout/fragment_sportgrounds" />
+
+    <fragment
+        android:id="@+id/fragment_appointment"
+        android:name="com.example.rentez.presentation.appointment.AppointmentFragment"
+        android:label="AppointmentFragment"
+        tools:layout="@layout/fragment_appointment" />
+
+    <fragment
+        android:id="@+id/fragment_pick_box"
+        android:name="com.example.rentez.presentation.pickbox.PickBoxFragment"
+        android:label="PickBoxFragment"
+        tools:layout="@layout/fragment_pick_box" />
+
+</navigation>
